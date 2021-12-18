@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -12,6 +14,7 @@ body {
 
 .navbar {
     height: 6.2rem;
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -19,8 +22,10 @@ body {
 
     padding: 10px 6.35rem;
 
+    /* position: fixed; */
 
-    background: black;
+
+    background: rgb(0, 0, 0);
 
     box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.171);
 }
@@ -66,7 +71,7 @@ body {
 }
 
 .userLink:hover {
-    padding-bottom: 0px;
+    padding: 1rem .8rem;
     color: white;
     border: 1px solid white;
 }
@@ -89,7 +94,7 @@ header img {
     width: 100%;
     height: 450px;
 
-    position: fixed;
+    position: absolute;
 
     z-index: -1;
 }
@@ -105,14 +110,14 @@ header img {
 
 .headerContainer h2 {
     font-size: 2.8rem;
-    font-weight: lighter;
+    font-weight: 200;
 
     
-    color: gainsboro;
+    color: rgb(255, 255, 255);
 }
 
 .headerContainer p {
-
+    font-size: 14px;
     text-align: center;
     color: gainsboro;
 }
@@ -143,4 +148,185 @@ header img {
 
 .downNow:hover {
     background-color: #FF9B22;
+}
+
+/*
+########## INFO THE PLACE #########
+*/
+
+.infoPlace {
+    height: 250px; 
+    width: 100%;
+}
+
+.textInfoPlace {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    text-align: center;
+}
+
+.textInfoPlace h2 {
+    font-weight: 300;
+    font-size: 2rem;
+
+    color: rgba(0, 0, 0, 0.712);
+}
+
+.textInfoPlace p {
+    font-size: 14px;
+
+    color: rgba(0, 0, 0, 0.836);
+
+
+}
+
+/*
+############## MORE INFOMATIONS ##################
+*/
+
+.reasonsUseTemplate {
+    width: 100%;
+    height: 450px;
+    padding: 1rem 5rem;
+}
+
+
+.reasonsUseTemplate h3 {
+    font-weight: 300;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #333333;
+}
+
+
+.reasonsUseTemplate i {
+    font-size: 3rem;
+    color: #382526;
+}
+
+.reasonsUseTemplate h4 {
+    text-align: center;
+    font-weight: 600;
+    color: #382526;
+}
+
+.reasonsContainer {
+    height: 450px;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.reasonsContainer div {
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*
+############## FREQUENTLY QUESTIONS #########################
+*/
+
+.frequentlyQuestions {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    margin-top: 1.2rem;
+}
+
+.frequentlyQuestions h2 {
+    font-weight: 300;
+    font-size: 30px;
+    color: #333333;
+}
+.questionsContainer {
+    padding: 0 5.2rem;
+
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 1.5rem 1rem;
+}
+
+.questionsContainer > div{
+    padding: 10px;
+
+    text-align: left;
+} 
+
+.questionsContainer > div > h4 {
+    font-size: 24px;
+    font-weight: 400;
+
+    color: #333333;
+}
+
+.questionsContainer > div > p {
+    font-size: 14px;
+    color: #333333;
+}
+
+.questionsContainer > div > p > a {
+    color: #2a7cc0;
+}
+
+/*
+################### LEARN MORE ##################
+*/
+
+.learnMore {
+    margin: 3rem 0;
+}
+
+.learnMoreContainer {
+    padding: 10px 8.5rem;
+    position: absolute;
+}
+
+.learnMoreContainer button {
+    width: 9.5rem;
+    height: 2.2rem;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+
+
+    position: relative;
+    left: 86%;
+
+    border: none;
+    border-radius: 3px;
+
+    background: #FF920E;
+    color: #FAECFF;
+
+    cursor: pointer;
+}
+
+
+.learnMoreContainer button:hover {
+    color: white;
 }

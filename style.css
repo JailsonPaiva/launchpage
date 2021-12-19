@@ -22,10 +22,10 @@ body {
 
     padding: 10px 6.35rem;
 
-    /* position: fixed; */
+    position: fixed;
 
 
-    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.76);
 
     box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.171);
 }
@@ -47,11 +47,13 @@ body {
     gap: 1rem;
 
     font-size: 14px;
+    list-style: none;
 
 }
 
 .links a {
     color: gainsboro;
+    transition: .5s ease;
 }
 
 .links a:hover {
@@ -83,7 +85,7 @@ body {
 
 header {    
     width: 100%;
-    height: 450px;
+    height: 500px;
 
     display: flex;
     align-items: center;
@@ -92,20 +94,26 @@ header {
 
 header img {
     width: 100%;
-    height: 450px;
+    height: 80%;
 
     position: absolute;
+
 
     z-index: -1;
 }
 
 .headerContainer {
+    width: 100%;
     height: 200px;
     padding: 0 10px;
 
+    position: relative;
+    top: 22%;
+
     display: flex;
+    align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 .headerContainer h2 {
@@ -142,6 +150,8 @@ header img {
 
     background: #fa9213;
     color: rgb(255, 255, 255);
+
+    transition: .5s ease;
 
     border-radius: 3px;
 }
@@ -320,13 +330,159 @@ header img {
     border: none;
     border-radius: 3px;
 
+    transition: .5s ease;
     background: #FF920E;
     color: #FAECFF;
 
     cursor: pointer;
 }
 
+.learnMoreContainer button:hover {
+    background-color: #FF9B22;
+}
+
+
 
 .learnMoreContainer button:hover {
     color: white;
+}
+
+/*
+############## FOOTER ##############
+*/
+
+footer {
+    padding: 1rem 2rem;
+
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+
+    position: relative;
+    bottom: -40%;
+
+    background: #232323;
+}
+
+footer > section > h3 {
+    margin-bottom: 1rem;
+    
+    font-size: 17px;
+    font-weight: 500;
+    color: #cccccc;
+}
+
+footer section  p {
+    color: #999999;
+}
+
+
+/*###### CONTACT #######*/
+.containerContact {
+    width: 243px;
+}
+
+.containerContact p a {
+    font-size: 12px;
+    color: #cccccc;
+}
+
+.containerContact p {
+    font-size: 12px;
+}
+
+/*##### SOCIAL MIDEA #####*/
+.socialMidea {
+    width: 243px;
+}
+
+.socialMidea i {
+    color: #cccccc;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.socialIcons i {
+    cursor: pointer;
+}
+
+.socialIcons i:hover {
+    color: #FAECFF;
+}
+
+.fa-twitter {
+    font-size: 27px;
+}
+
+.fa-github {
+    font-size: 25px;
+}
+
+.fa-facebook-f {
+    font-size: 24px;
+}
+
+.fa-instagram {
+    font-size: 27px;
+}
+
+/*###### TEXT WIDGET #######*/
+.containerTextWidget {
+    width: 485px;
+}
+
+.containerTextWidget p {
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+/*############ BOTTOM BAR ##############*/
+
+.bottomBar {
+    width: 100%;
+    height: 2.5rem;
+    padding: 15px 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: absolute;
+    bottom: -10%;
+    background-color: #191919;
+}
+
+.bottomBar ul {
+    display: flex;
+    gap: 1rem;
+    padding-left: 5.5rem;
+
+    list-style: none;
+}
+
+.bottomBar ul li a {
+    padding-left: 10px;
+
+    color: #999999;
+    font-size: 12px;
+    
+    border-left: 1px solid #999999;
+}
+
+.bottomBar ul li a:hover {
+    color: #cccccc;
+}
+
+/*########## COPYRIGHT ############*/
+.copyright p {
+    font-size: 12px;
+    padding-right: 6.5rem;
+
+}
+
+.copyright p a {
+    color: #cccccc;
 }

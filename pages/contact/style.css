@@ -74,10 +74,10 @@ body {
 }
 
 .links a:hover {
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 
     color: white;
-    border-bottom:1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .userLink {

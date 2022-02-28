@@ -99,6 +99,11 @@ body {
 }
 
 
+.userLink a:hover {
+    border: 0px;
+}
+
+
 /*
 ############## header ################
 */

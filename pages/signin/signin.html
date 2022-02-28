@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>Sign in</title>
 </head>
@@ -23,10 +24,12 @@
                         <a href="#">More Pages</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="../contact/contact.html">Contact</a>
                     </li>
                     <li>
-                        <button type="button" class="userLink">SIGN IN / SIGN UP</button>
+                        <button type="button" class="userLink">
+                            <a href="../signin/signin.html">SIGN IN / SIGN UP</a>
+                        </button>
                     </li>
                 </ul>
             </div>
@@ -37,29 +40,74 @@
         <div class="secundaryHeader">
             <a href="../home/home.html" class="linkHome">Home</a> 
             <span>/</span>
-            <a href="#" class="linkAbout">About</a>
+            <a href="#" class="linkAbout">User access</a>
         </div>
 
         <h1>Sign in</h1>
+        <hr>
 
         <form>
             <header>
                 <h2>Sign in to your account</h2>
                 <p>Lorem ipsum dolor sit amet, <a href="#">Register</a> adipisicing elit. Quo nulla quibusdam cum doloremque incidunt nemo sunt a tenetur omnis odio.</p>
             </header>
+            
+            <input type="text" name="username-email" placeholder="User Name">
 
-            <label for="username">Username/Email <span>*</span></label>
-            <input type="text" name="username-email">
+            <input type="password" name="password" placeholder="Password">
 
-            <label for="password" class="labelPassword">Password <span>*</span></label>
-            <input type="password" name="password" >
-
-            <footer>
+            <div class="footerForm">
                 <a href="#">Forgot Password?</a>
 
-                <button type="submit">Sign in</button>
-            </footer>
+                <button type="submit" class="signin">Sign in</button>
+            </div>
         </form>
     </main>
+
+    <footer>
+        <section class="containerContact">
+            <h3>Contact</h3>
+
+            <div class="contacts">
+                <p>+55 (65) 99604-7289</p>
+                <p><a href="#">
+                    jailsonp437@gmail.com
+                </a></p>
+                <br>
+                <p>Rua Joaquim Gomes Moreno N°175, Cuiabá - MT</p>
+            </div>
+        </section>
+
+        <section class="socialMidea">
+            <h3>Follow me</h3>
+
+            <div class="socialIcons">
+                <i class="fab fa-github"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-facebook-f"></i>
+            </div>
+        </section>
+
+        <section class="containerTextWidget">
+            <h3>Text widget</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, dolores, quibusdam architecto voluptatem amet fugiat nesciunt placeat provident cumque accusamus itaque voluptate modi quidem dolore optio velit hic iusto vero praesentium repellat commodi ad id expedita cupiditate repellendus possimus unde?</p>
+            <p>Eius consequatur nihil quibusdam! Laborum, rerum, quis, inventore ipsa autem repellat provident assumenda labore soluta minima alias temporibus facere distinctio quas adipisci nam sunt explicabo officia tenetur at ea quos doloribus dolorum voluptate reprehenderit architecto sint libero illo et hic.</p>
+        </section>
+
+        <section class="bottomBar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Sidebar</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
+                <li><a href="#">Sign up</a></li>
+            </ul>
+
+            <div class="copyright">
+                <p>Copyright &copy; 2021, Jailson Paiva. Designed by <a href="https://www.gettemplate.com/">gettemplate</a></p>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>

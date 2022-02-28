@@ -97,6 +97,10 @@ body {
     border: 1px solid #fff;
 }
 
+.userLink a:hover {
+    border: 0px;
+}
+
 /*################# FORM #################*/
 
 main {
